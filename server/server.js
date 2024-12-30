@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import 'dotenv/config'
-import cookieParser from 'cookie-parser'
+import cookieParser from 'cookie-parser' //Cookies are sent by the client (typically browsers) along with HTTP requests. The cookie-parser middleware makes it easy to extract and read cookies in the req.cookies object.
 import connectDB from './config/mongodb.js'
 import authRoutes from './router/authRoutes.js'
 import userRouter from './router/userRoutes.js'
